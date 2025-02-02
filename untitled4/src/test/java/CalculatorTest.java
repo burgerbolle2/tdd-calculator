@@ -28,4 +28,18 @@ class CalculatorTest {
         int result = calculator.divide(6, 2);
         assertEquals(3, result, "6 / 2 should equal 3");
     }
+    @Test
+    void testAddString(){
+        Calculator calculator = new Calculator();
+        int expected = 6;
+        int result = calculator.add("1,2,3");
+        assertEquals(expected, result,"1+2+3 should equal 6");
+    }
+    @Test
+    void testAddArray(){
+        Calculator calculator = new Calculator();
+        int expected = 6;
+        int result = calculator.add(new int[]{1,2,3});
+        assertEquals(expected, result,"1+2+3 should equal 6");
+    }
 }

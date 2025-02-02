@@ -16,4 +16,20 @@ public class Calculator {
         }
         return a / b;
     }
+    public int add(String numbers) {
+        if (numbers.isEmpty()) return 0;
+        String[] parts = numbers.split(",");
+        int sum = 0;
+        for (String num : parts) {
+            sum += Integer.parseInt(num.trim());
+        }
+        return sum;
+    }
+    public int add(int[] numbers) {
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+        return sum;
+    }
 }
