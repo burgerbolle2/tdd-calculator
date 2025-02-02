@@ -4,9 +4,6 @@ Calculator features
  - Can take addition from a string input.
  - Can take addition from an integer array.
 
-On branch main
-Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
 commit 4794b725b0ca355640b50f64139604495117b15f
